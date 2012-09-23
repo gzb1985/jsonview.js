@@ -68,7 +68,7 @@ var JsonFormatter = {
         var output = '';
         if (fnName)
             output += '<div class="callback-function">' + fnName + '(</div>';
-        output += '<div id="json">';
+        output += '<div id="jsonView">';
         output += this.valueToHTML(json);
         output += '</div>';
         if (fnName)
@@ -129,8 +129,8 @@ var onmouseMove = (function() {
     };
 })();
 
-function jsonview(json, $container) {
-    var element = JsonFormatter.jsonToHTML(json);
+function jsonview(jsonObj, $container) {
+    var element = JsonFormatter.jsonToHTML(jsonObj);
     $container.empty();
     $container.append(element);
     $(element).ready(function() {

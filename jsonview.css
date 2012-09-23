@@ -1,11 +1,16 @@
 
-#json ul {
+#jsonView {
+  white-space: pre;
+  font-family: monospace;
+}
+
+#jsonView ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px 0px 0px 26px;
 }
 
-#json li {
+#jsonView li {
   position: relative;
 }
 
@@ -40,11 +45,6 @@
 }
 
 /*default theme*/
-#json {
-  white-space: pre;
-  font-family: monospace;
-}
-
 .property {
   font-weight: bold;
 }
