@@ -1,11 +1,14 @@
-
 # jsonview.js
 
 将json转换为html，更好的呈现json数据。
 
 ### 使用方法
 
-引用jsonview.js和jsonview.css，假设有<div id="jsonview"></div>，调用：
+引用jsonview.js和jsonview.css，假设有
+
+	<div id="jsonview"></div>，
+
+调用：
 
 	jsonview(jsonObj, $container);
 
