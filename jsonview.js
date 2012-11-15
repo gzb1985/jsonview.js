@@ -1,4 +1,3 @@
-
 var JsonFormatter = {
     htmlEncode: function(t) {
         return t != null ? t.toString().replace(/&/g, "&amp;").replace(/"/g, "&quot;")
@@ -21,7 +20,7 @@ var JsonFormatter = {
             output += this.decorateWithSpan(value, "type-number");
         else if (valueType == "string")
             if (/^(http|https):\/\/[^\s]+$/.test(value))
-                output += this.decorateWithSpan('"', "type-string") + '<a href="' + value + '">' 
+                output += this.decorateWithSpan('"', "type-string") + '<a href="' + value + '" target="_blank">' 
                         + this.htmlEncode(value) + '</a>' + this.decorateWithSpan('"', "type-string");
             else
                 output += this.decorateWithSpan('"' + value + '"', "type-string");
